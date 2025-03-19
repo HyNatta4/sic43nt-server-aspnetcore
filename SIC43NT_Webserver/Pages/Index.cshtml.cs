@@ -43,7 +43,8 @@ namespace SIC43NT_Webserver.Pages
                     timeStampTag_str = d.Substring(16, 8);
                     timeStampTag_uint = UInt32.Parse(timeStampTag_str, System.Globalization.NumberStyles.HexNumber).ToString();
                     rollingCodeTag = d.Substring(24, 8);
-                    default_key = "FFFFFF" + uid;
+                    // default_key = "FFFFFF" + uid;
+                    default_key = "00000000000000000000";
                     rollingCodeServer = KeyStream.stream(default_key, timeStampTag_str, 4);
                     result_agreement_check();
                 }
