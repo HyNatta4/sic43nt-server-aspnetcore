@@ -44,7 +44,18 @@ namespace SIC43NT_Webserver.Pages
                     timeStampTag_uint = UInt32.Parse(timeStampTag_str, System.Globalization.NumberStyles.HexNumber).ToString();
                     rollingCodeTag = d.Substring(24, 8);
                     // default_key = "FFFFFF" + uid;
-                    default_key = "00000000000000000000";
+                    if(uid == "39495001BE3002")
+                    {
+                        default_key = "00000000000000000000";
+                    }
+                    else if(uid == "39495001BE455B")
+                    {
+                        default_key = "88888888888888888888";
+                    }
+                    else
+                    {
+                        default_key = "FFFFFF" + uid;
+                    }
                     rollingCodeServer = KeyStream.stream(default_key, timeStampTag_str, 4);
                     result_agreement_check();
                 }
