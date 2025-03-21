@@ -50,7 +50,6 @@ namespace SIC43NT_Webserver.Pages
                     // CloudTableClient tableClient = storageAccount.CreateCloudTableClient(new TableClientConfiguration());
                     // CloudTable table = tableClient.GetTableReference(tablename);
 
-
                     uid = d.Substring(0, 14);
                     flagTamperTag = d.Substring(14, 2);
                     timeStampTag_str = d.Substring(16, 8);
