@@ -41,6 +41,14 @@ namespace SIC43NT_Webserver.Pages
             {
                 if (d.Length == 32)
                 {
+                    // var storageconnectionstring = "DefaultEndpointsProtocol=https;AccountName=fortestsic43nt;AccountKey=v8eW42KAb07E8mVf/svcbZ1mzrUM9C6AzP7+2fSZSHRN0xlH1LMfyxWy0p+s9a/NO0th0N6DBF46+AStxv3+6A==;EndpointSuffix=core.windows.net";
+                    // var tablename = "sic43nt";
+
+                    // CloudStorageAccount storageAccount;
+                    // storageAccount = CloudStorageAccount.Parse(storageconnectionstring);
+                    
+                    // CloudTableClient tableClient = storageAccount.CreateCloudTableClient(new TableClientConfiguration());
+                    // CloudTable table = tableClient.GetTableReference(tablename);
 
                     uid = d.Substring(0, 14);
                     flagTamperTag = d.Substring(14, 2);
