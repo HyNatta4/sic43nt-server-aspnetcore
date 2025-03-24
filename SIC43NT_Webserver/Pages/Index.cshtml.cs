@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using SIC43NT_Webserver.Utility.KeyStream;
 // using Microsoft.Azure.Cosmos.Table;
-using Microsoft.Azure.Cosmos.Table;
+// using Microsoft.Azure.Cosmos.Table;
 
 
 namespace SIC43NT_Webserver.Pages
